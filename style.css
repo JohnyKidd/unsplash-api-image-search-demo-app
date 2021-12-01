@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: peru;
+}
+#header{
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+}
+#searchKey{
+    margin-left: auto;
+
+}
+#searchButton{
+    padding: 10px;
+    margin-left: 10px;
+}
+#imageResults{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    
+}
+.imgs{
+    border: 5px solid palevioletred;
+    border-radius: 15px;
+    width: 20vw;
+    height: 50vh;
+    margin: 10px auto;
+    transform: translate(10px);
+    transition: all 1s;
+}
+.imgs:hover{
+    opacity: 0.5;
+    transform: scale(1.05);
+}
+/* responsive design */
+@media screen and (max-width: 992px) {
+    #imageResults{
+        display: flex;
+        flex-direction: column;
+    }
+    .imgs{
+        width: 80vw;
+        height: 50vh;
+    }
+  }
