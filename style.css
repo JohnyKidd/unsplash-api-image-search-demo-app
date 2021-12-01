@@ -46,7 +46,17 @@ body{
         flex-direction: column;
     }
     .imgs{
-        width: 80vw;
+        width: 60vw;
         height: 50vh;
     }
-  }
+    #header{
+        height: 10vh;
+        font-size: 2rem;
+    }
+    button{
+        font-size: 2rem;
+    }
+    input{
+        font-size: 2rem;
+    }
+}
